@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            background-color: black;
+            height: 400px;
+            width: 630px;
+        }
+        .content-laby{
+            position: relative;
+        }
+        .laby{
+            background-color: rgba(255, 255, 0, 0.856);
+            position: absolute;
+            height: 30px;
+        }
+        .laby-1{
+            top: 75px;
+            width: 200px;
+        }
+        .laby-2{
+            top: 75px;
+            left: 200px;
+            width: 30px;
+            height: 300px;
+        }
+        .laby-3{
+            top: 345px;
+            left: 230px;
+            width: 400px;
+            height: 30px;
+        }
+        .emoji{
+            position: absolute;
+            top: 83px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: mietsika 5s ease-in-out 2s forwards;
+        }
+        .emoji:hover{
+            animation-play-state: paused;
+        }
+        @keyframes mietsika {
+            30%{
+                transform: translateX(200px);
+            }
+            60%{
+                transform: translateX(200px) translateY(275px) rotate(90deg);
+            }
+            100%{
+                transform: translateX(630px) translateY(275px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="content-laby">
+                <div class="laby laby-1">
+                </div>
+                <div class="laby laby-2"></div>
+                <div class="laby laby-3"></div>
+            </div>
+            <img src="https://media.giphy.com/media/dxP5jFKOP5gvhmMVBd/giphy.gif" alt="emoji" width="25" class="emoji">
+            <!-- <img src="https://media.giphy.com/media/H83MQGzxxVcdd7oyEG/giphy.gif" alt="">
+            <img src="https://media.giphy.com/media/Kcbcr4uixzyYnYrrmP/giphy.gif" alt=""> -->
+        </div>
+    </div>
+</body>
+</html>
