@@ -35,7 +35,7 @@ body{
         .laby-3{
             top: 345px;
             left: 230px;
-            width: 400px;
+            width:  -webkit-fill-available;
             height: 30px;
         }
     }
@@ -56,6 +56,7 @@ body{
         transform: translateX(200px) translateY(275px) rotate(90deg);
     }
     100%{
-        transform: translateX(630px) translateY(275px);
+        color: white;
+        transform: translateX(var(--translation-value)) translateY(275px);
     }
 }
